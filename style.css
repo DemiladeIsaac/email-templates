@@ -1,0 +1,41 @@
+.toggle-btn {
+  position: relative;
+  border-radius: 99px;
+  border: 1px solid #B5B9C7;
+  padding: 0;
+}
+.toggle-btn:focus {
+  outline: none;
+}
+.toggle-child{
+  width: 58.67px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 99px;
+  transition: all;
+  background-color: #DFF8F2;
+  cursor: pointer;
+}
+.toggle-true {
+  position: relative;
+  left: 8px;
+}
+.toggle-sphere {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  cursor: pointer;
+  top: 1px;
+  right: 2px;
+  border: 1px solid #B5B9C7;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s;
+  transform: scale(110%);
+  border-radius: 100%;
+  transform: translateX(0);
+  background-color: #fff;
+}

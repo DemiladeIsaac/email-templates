@@ -1,3 +1,4 @@
 {
-  "window.title": "${activeEditorShort}${separator}${rootName} ${separator} [Branch: gh-pages]"
+  "window.title": "${activeEditorShort}${separator}${rootName} ${separator} [Branch: main]",
+  "liveServer.settings.port": 5502
 }
