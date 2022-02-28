@@ -60,7 +60,7 @@
             color: #939ba9;
           "
         >
-          Hello [Business Name]
+          Hello {{business_name}}
         </h1>
         <p
           style="
@@ -72,7 +72,7 @@
             padding-top: 10px;
           "
         >
-          [Customer Name] <br />
+          {{customer_name}} <br />
           just paid you the sum of
         </p>
         <h3
@@ -86,10 +86,10 @@
             padding-bottom: 20px;
           "
         >
-          ₦49,880.00
+          ₦{{transaction_amount}}
         </h3>
         <p style="background-color: #0066ff; color: #fff; text-align: center">
-          This is a test payment
+          This is a test payment. No real money was sent to you.
         </p>
       </div>
       <div style="padding-top: 20px">
@@ -121,7 +121,7 @@
               font-size: 15px;
               float: right;
             "
-            >9th March, 2021</span
+            >{{transaction_date}}</span
           >
         </div>
         <div style="display: inline-block; width: 100%; padding-top: 10px">
@@ -143,18 +143,7 @@
               float: right;
             "
           >
-            <img
-              src="https://res.cloudinary.com/cashenvoy/image/upload/v1636009762/Cashenvoy-nextgen/mastercard_eqjmut.png"
-              style="
-                width: 32.37px;
-                height: 21.58px;
-                object-fit: contain;
-                position: relative;
-                top: 5px;
-              "
-              alt="card type"
-            />
-            Ends with 4493
+            Card ending with {{card_last_four}}
           </span>
         </div>
         <div style="display: inline-block; width: 100%; padding-top: 10px">
@@ -175,7 +164,7 @@
               font-size: 15px;
               float: right;
             "
-            >0039920490200</span
+            >{{reference_id}}</span
           >
         </div>
       </div>

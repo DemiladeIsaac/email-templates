@@ -11,7 +11,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Nunito Sans', sans-serif;
-      background-color: #e5e5e5;;
+      background-color: #fff;
       -webkit-font-smoothing: antialiased;
     }
   </style>
@@ -29,12 +29,12 @@
           alt="Business Logo" />
       </div>
       <div style="padding: 0 30px;">
-        <p style="color: #382B3D; font-size: 15px; padding-top: 20px;font-weight: bold;">Hi Ogunsanya,</p>
+        <p style="color: #382B3D; font-size: 15px; padding-top: 20px;font-weight: bold;">Hi {{customer_name}},</p>
         <span style="color: #382B3D; font-size: 15px; padding-top: 15px; display: block;">
-          <span style="color: #0066ff; font-weight: 700;">"Company Name"</span> has just revoked your access to it's
+          <span style="color: #0066ff; font-weight: 700;">{{company_name}}</span> has just revoked your access to it's
           business on Yep.
-          <p>What this means is that you will no longer have access to the business operation of <span style="color: #0066ff; font-weight: 700;">"Company
-              Name" </span> on Yep.
+          <p>What this means is that you will no longer have access to the business operation of <span style="color: #0066ff; font-weight: 700;">{{company_name}}
+          </span> on Yep.
           </p>
         </span>
         <a href="s" style="
@@ -52,7 +52,7 @@
         ">View Business
         </a>
         <p style="font-size: 15px; color: #382B3D; line-height: 20px;">
-          If you have any questions about this invitation, kindly contact <span style="color: #0066ff;">“Company”</span>at <span style="color: #0066ff;">“companyemail@email.com”.</span>
+          If you have any questions about this invitation, kindly contact <span style="color: #0066ff;">{{company_name}}</span> at <span style="color: #0066ff;">{{company_email}}</span>
         </p>
         <p style="font-size: 15px; padding: 30px 0; color: #382B3D; line-height: 20px;">
           Regards,<br />

@@ -11,7 +11,7 @@
       margin: 0;
       padding: 0;
       font-family: 'Nunito Sans', sans-serif;
-      background-color: #e5e5e5;;
+      background-color: #fff;;
       -webkit-font-smoothing: antialiased;
     }
   </style>
@@ -35,13 +35,12 @@
             src="https://res.cloudinary.com/cashenvoy/image/upload/v1629378233/Cashenvoy-nextgen/image_969_wcy6zy.png"
             alt="Hi" />
         </div>
-        <span style="color: #382B3D; font-size: 15px; display: block; padding-top: 20px;">Hi Zara,</span>
+        <span style="color: #382B3D; font-size: 15px; display: block; padding-top: 20px;">Hi {{customer_name}},</span>
         <span style="color: #382B3D; font-size: 15px; padding-top: 40px; display: block;">
-          <span style="color: #0066ff; font-weight: 700;">"Invitee Company Name"</span> has just added you to the
-          <span style="color: #0066ff; font-weight: 700;">"Invitee Company Name"</span>
+          <span style="color: #0066ff; font-weight: 700;">{{company_name}}</span> has just added you to the
+          <span style="color: #0066ff; font-weight: 700;">{{company_name}}</span>
           team on Yep.
-          <p>What this means is that we have added <span style="color: #0066ff; font-weight: 700;">"Invitee Company
-              Name"</span> to the list of businesses to which you have access to - you'll find it under
+          <p>What this means is that we have added <span style="color: #0066ff; font-weight: 700;">{{company_name}}</span> to the list of businesses to which you have access to - you'll find it under
             "Other Businesses" at the top left of your dashboard.
           </p>
         </span>
@@ -60,7 +59,7 @@
         ">View Business
         </a>
         <p style="font-size: 15px; color: #382B3D; line-height: 20px;">
-          If you have any questions about this invitation, kindly contact <span style="color: #0066ff;">“Company”</span>at <span style="color: #0066ff;">“companyemail@email.com”.</span>
+          If you have any questions about this invitation, kindly contact <span style="color: #0066ff;">{{company_name}}</span> at <span style="color: #0066ff;">{{company_email}}</span>
         </p>
         <p style="font-size: 15px; padding: 30px 0; color: #382B3D; line-height: 20px;">
           Regards,<br />

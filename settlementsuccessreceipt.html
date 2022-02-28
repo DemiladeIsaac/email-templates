@@ -60,7 +60,7 @@
             color: #34a853;
           "
         >
-          Hello [Business Name]
+          Hello {{business_name}}
         </h1>
         <p
           style="
@@ -73,9 +73,8 @@
             padding-bottom: 20px;
           "
         >
-          A total sum of ₦49,880.00 has <br />
-          been settled into your account for <br />
-          transactions received.
+          A total sum of ₦{{transaction_amount}} has <br />
+          been settled into your account
         </p>
       </div>
       <div style="padding-top: 20px">
@@ -107,7 +106,7 @@
               font-size: 15px;
               float: right;
             "
-            >[Merchant’s bank account]</span
+            >{{bank_account}}</span
           >
         </div>
         <div style="display: inline-block; width: 100%; padding-top: 10px">
@@ -129,7 +128,7 @@
               float: right;
             "
           >
-            [Merchant’s account number]
+            {{account_number}}
           </span>
         </div>
         <div style="display: inline-block; width: 100%; padding-top: 10px">
@@ -140,31 +139,7 @@
               line-height: 18px;
               float: left;
             "
-          >
-            Number of Transactions
-          </span>
-          <span
-            style="
-              margin-left: auto;
-              color: #382b3d;
-              font-weight: 600;
-              font-size: 15px;
-              float: right;
-            "
-          >
-            Number of transactions that <br />
-            occurred before the T+1 date
-          </span>
-        </div>
-        <div style="display: inline-block; width: 100%; padding-top: 10px">
-          <span
-            style="
-              color: #6f717e;
-              font-size: 14px;
-              line-height: 18px;
-              float: left;
-            "
-            >Settlement ID/Reference</span
+            >Transaction Reference</span
           >
           <span
             style="
@@ -174,7 +149,7 @@
               font-size: 15px;
               float: right;
             "
-            >[Settlement ID]</span
+            >{{reference_id}}</span
           >
         </div>
       </div>

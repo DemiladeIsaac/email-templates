@@ -21,7 +21,7 @@
         margin: 0;
       }
     </style>
-    <title>Transaction - Customer Failed Receipt</title>
+    <title>Test Receipt</title>
   </head>
 
   <body>
@@ -40,26 +40,15 @@
             width: 111px;
             height: 32px;
             object-fit: cover;
-            float: left;
-            position: relative;
-            top: -12px;
+            margin: 0 auto;
+            display: block;
           "
           src="https://res.cloudinary.com/cashenvoy/image/upload/v1643108208/yep/yeplogo_y0dybq.png"
           alt="Business Logo"
         />
-        <span
-          style="
-            color: #f12f58;
-            float: right;
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 18px;
-          "
-          >Payment Failed</span
-        >
       </header>
       <div
-        style="background-color: #fde5e5; border-radius: 10px; margin-top: 40px"
+        style="background-color: #f4f6f8; border-radius: 10px; margin-top: 20px"
       >
         <h1
           style="
@@ -68,10 +57,10 @@
             font-weight: 600;
             padding-top: 20px;
             line-height: 18px;
-            color: #f12f58;
+            color: #939ba9;
           "
         >
-          Hi {{customer_name}}
+          Hello {{customer_name}}
         </h1>
         <p
           style="
@@ -83,13 +72,13 @@
             padding-top: 10px;
           "
         >
-          {{business_name}} <br />
-          received your payment of
+          {{business_name] <br />
+          just received your payment of
         </p>
         <h3
           style="
             text-align: center;
-            color: #f12f58;
+            color: #0066ff;
             font-size: 20px;
             line-height: 28px;
             font-weight: 600;
@@ -99,6 +88,16 @@
         >
           ₦{{transaction_amount}}
         </h3>
+        <p
+          style="
+            background-color: #0066ff;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+          "
+        >
+          This receipt is for a test transaction. No real money was debited.
+        </p>
       </div>
       <div style="padding-top: 20px">
         <h4
@@ -176,7 +175,34 @@
           >
         </div>
       </div>
-      <footer style="border-top: 1px dotted #ccc; margin-top: 238px">
+      <div style="padding-top: 126px; padding-bottom: 23px">
+        <span
+          style="
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            color: #6f717e;
+            line-height: 17.73px;
+            font-weight: 600;
+            padding-bottom: 5px;
+          "
+          >Thanks for choosing Yep</span
+        >
+        <a
+          href=""
+          style="
+            color: #0066ff;
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            text-decoration: none;
+            line-height: 17.73px;
+            font-weight: 600;
+          "
+          >noreply@yep.com</a
+        >
+      </div>
+      <footer style="border-top: 1px dotted #ccc">
         <img
           src="https://res.cloudinary.com/cashenvoy/image/upload/v1643107631/yep/yepfooter_kkteva.png"
           style="
